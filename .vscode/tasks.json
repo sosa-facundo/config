@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C/C++: g++.exe",
+            "detail": "Compile (Windows) | main.cpp",
+            "type": "shell",
+            "command": "g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-std=c++17",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "${fileDirname}\\main.cpp",
+                "-o",
+                "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build"
+            }
+        }
+    ]
+}
